@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About — Sandhu & Co.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+      <div class="logo">
+        <img src="images/logo.png" width="125" alt="Sandhu & Co. logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <i class='bx bx-search' id="search-icon"></i>
+        <span class="cart-icon-wrap" id="cart-toggle">
+          <i class='bx bx-cart'></i>
+          <span class="cart-badge" id="cart-count">0</span>
+        </span>
+        <i class='bx bx-menu' id="menu-icon"></i>
+      </div>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search products..." />
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="about-img">
+      <img src="images/about.jpg" alt="About our brand">
+    </div>
+    <div class="about-text">
+      <h2>Our History</h2>
+      <p>
+        We started with a simple belief: nature knows best. Our small-batch,
+        plant-based formulas are made to be gentle, effective, and honest.
+      </p>
+      <p>
+        Every ingredient is chosen with intention! Clean, transparent, and
+        sustainable. So your daily ritual feels good for you and the planet.
+      </p>
+      <a href="products.html" class="btn">Shop the Collection</a>
+    </div>
+  </section>
+
+  <section class="footer" id="contact">
+    <div class="footer-box">
+      <h2>Sandhu & Co.</h2>
+      <p>Plant-based skincare crafted for everyday radiance.</p>
+      <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-tiktok'></i></a>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h3>Support</h3>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Return Policy</a></li>
+      <li><a href="#">Terms Of Use</a></li>
+    </div>
+    <div class="footer-box">
+      <h3>View Guides</h3>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog Posts</a></li>
+      <li><a href="#">Our Branches</a></li>
+    </div>
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:info@sandhuco.com">info@sandhuco.com</a></p>
+      <p>Phone: <a href="tel:+14035551234">(403) 555-1234</a></p>
+      <p>Address: 123 Natural Way, Calgary, AB T1X 1X1</p>
+      <p>Hours: Mon–Fri: 9am – 5pm</p>
+    </div>
+  </section>
+
+  <aside class="cart-panel" id="cart-panel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total:</span><strong id="cart-total">$0.00</strong></div>
+      <a class="btn" href="cart.html" id="checkout-btn">Checkout</a>
+    </div>
+  </aside>
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+

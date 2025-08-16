@@ -1,0 +1,202 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #FFFDF7;
+  color: #2C2C2C;
+}
+
+a { text-decoration: none; color: #2C2C2C; font-weight: 500; }
+a:hover { color: #556B2F; }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.header {
+  position: sticky; top: 0; z-index: 1000; background: #FFFDF7;
+  transition: box-shadow .25s ease;
+}
+.header.shadow { box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+
+.navbar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 0; gap: 12px;
+}
+.logo img { display: block; width: 125px; height: auto; }
+
+nav { flex: 1; }
+nav ul { display: inline-flex; list-style: none; gap: 20px; }
+nav ul li { display: inline-block; }
+nav a.active { color: #556B2F; font-weight: 700; }
+
+.header-icons {
+  display: flex; align-items: center; gap: 12px; font-size: 22px;
+}
+.header-icons .bx {
+  cursor: pointer; padding: 8px; border-radius: 8px;
+}
+.header-icons .bx:hover { background: #EDE6D0; }
+
+.search-box {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  top: -200%; width: min(100%, 1300px);
+  background: #FFFFFF; box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  transition: top .25s ease;
+}
+.search-box.active { top: 100%; }
+.search-box input {
+  width: 100%; padding: 18px 20px; border: none; outline: none;
+  font-size: 1rem; color: #2C2C2C;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center; gap: 1.5rem; padding: 40px 25px;
+}
+.hero-text { padding-left: 25px; }
+.hero-text h1 { font-size: 50px; line-height: 60px; margin: 25px 0; color: #556B2F; }
+.hero-text p { color: #555; max-width: 56ch; }
+.btn {
+  display: inline-block; background-color: #C5C9B2; color: #A9746E;
+  padding: 10px 32px; margin: 30px 0; border-radius: 30px;
+  transition: background .2s ease, color .2s ease; font-weight: 700;
+}
+.btn:hover { background: #6E4E45; color: #FFFDF7; }
+
+.hero-img { padding-right: 25px; }
+.hero-img img {
+  width: 100%; height: 520px; object-fit: cover; object-position: center;
+  border-radius: 14px; box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+section { padding: 60px 25px; }
+
+.about { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.5rem; align-items: center; }
+.about-img img { width: 100%; border-radius: 12px; }
+.about-text h2 { font-size: 1.8rem; text-transform: uppercase; color: #2C2C2C; margin-bottom: 10px; }
+.about-text p { margin: .5rem 0 1rem; color: #555; }
+
+.heading { text-align: center; margin-bottom: 1.25rem; }
+.heading h2 { font-size: 1.8rem; text-transform: uppercase; color: #2C2C2C; }
+
+.products-container {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem; margin-top: 1rem;
+}
+.products-container .box {
+  position: relative;
+  display: flex; flex-direction: column;
+  border-radius: 12px; overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08); background: #F5F0E1;
+}
+.products-container .box img {
+  display: block;
+  width: 100%; height: 250px;
+  object-fit: cover; object-position: center;
+}
+.products-container .box h3 { font-size: 1rem; font-weight: 700; text-transform: uppercase; margin: .75rem 0 0; color: #556B2F; padding: 0 12px; }
+.products-container .box .content { display: flex; align-items: center; justify-content: space-between; padding: 12px; }
+.products-container .box .content span {
+  padding: 6px 12px; color: #FFFDF7; background: #556B2F; border-radius: 6px; font-weight: 600;
+}
+.products-container .box .content a {
+  padding: 6px 12px; color: #2C2C2C; border: 2px solid #556B2F; border-radius: 6px; text-transform: uppercase; font-weight: 600;
+}
+.products-container .box .content a:hover { background: #556B2F; color: #FFFDF7; transition: .2s linear; }
+
+.footer {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem; background-color: #F5F0E1; padding: 40px 25px;
+}
+.footer-box h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+.footer-box h3 { font-weight: 700; margin-bottom: 10px; }
+.footer-box p { margin-bottom: 10px; color: #555; }
+.footer-box li { list-style: none; margin: 6px 0; }
+.footer-box li a { color: #2C2C2C; }
+.footer-box li a:hover { color: #556B2F; }
+.social { display: flex; align-items: center; column-gap: 8px; }
+.social a .bx {
+  font-size: 22px; color: #2C2C2C; padding: 10px; background: #EDE6D0; border-radius: 8px;
+}
+.social a .bx:hover { background: #556B2F; color: #FFFDF7; }
+.copyright { padding: 20px; text-align: center; background: #EDE6D0; color: #2C2C2C; }
+
+.cart-icon-wrap { position: relative; display: inline-flex; align-items: center; cursor: pointer; }
+.cart-badge {
+  position: absolute; top: -6px; right: -8px; min-width: 18px; height: 18px; padding: 0 4px;
+  background: #556B2F; color: #FFFDF7; border-radius: 10px; font-size: 12px; line-height: 18px; text-align: center; font-weight: 700;
+}
+.cart-panel {
+  position: fixed; top: 0; right: -380px; height: 100vh; width: 360px;
+  background: #FFFFFF; box-shadow: -8px 0 24px rgba(0,0,0,.12);
+  z-index: 2000; display: flex; flex-direction: column; transition: right .25s ease;
+}
+.cart-panel.open { right: 0; }
+.cart-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,.35);
+  z-index: 1990; opacity: 0; pointer-events: none; transition: opacity .2s ease;
+}
+.cart-backdrop.show { opacity: 1; pointer-events: auto; }
+.cart-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 18px; border-bottom: 1px solid #EDE6D0; }
+.cart-header h3 { font-size: 1.1rem; color: #2C2C2C; }
+.cart-close { background: transparent; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: #3B3A36; }
+.cart-items { padding: 10px 14px; overflow-y: auto; flex: 1; }
+.cart-item {
+  display: grid; grid-template-columns: 64px 1fr auto; gap: 10px; align-items: center;
+  padding: 10px; border-bottom: 1px solid #F5F0E1;
+}
+.cart-item img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; background: #f1f1f1; }
+.cart-item h4 { font-size: 0.95rem; color: #2C2C2C; margin-bottom: 4px; }
+.cart-item .price { color: #556B2F; font-weight: 700; }
+.cart-item .qty { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; }
+.qty button { width: 24px; height: 24px; border-radius: 6px; border: 1px solid #EDE6D0; background: #FFFDF7; cursor: pointer; }
+.remove-btn { background: transparent; border: none; color: #A9746E; cursor: pointer; font-size: 12px; margin-top: 6px; text-decoration: underline; }
+.cart-footer { border-top: 1px solid #EDE6D0; padding: 14px 16px; }
+.cart-total { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.cart-page-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; align-items: start;
+}
+.cart-page-items .cart-item { grid-template-columns: 80px 1fr auto; }
+.cart-page-summary {
+  background: #F5F0E1; border-radius: 12px; padding: 16px;
+}
+.cart-page-summary h3 { margin-bottom: 10px; }
+.summary-line, .summary-total {
+  display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px dashed #E0D8C3;
+}
+.summary-total { border-bottom: none; font-size: 1.1rem; }
+
+@media (max-width: 1024px) { .hero-img img { height: 460px; } }
+@media (max-width: 900px) {
+  #menu-icon { display: inline-block; }
+  nav ul {
+    position: absolute; top: calc(100% + 8px); right: 25px; background: #FFFDF7;
+    border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,.08); padding: 14px;
+    flex-direction: column; gap: 10px; display: none;
+  }
+  nav ul.active { display: flex; }
+  .hero { grid-template-columns: 1fr; padding-top: 30px; }
+  .hero-text { padding: 0 10px; text-align: center; }
+  .hero-img { padding: 0 10px; }
+  .hero-img img { height: 360px; }
+  .navbar { gap: 8px; }
+  .cart-page-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .hero-text h1 { font-size: 36px; line-height: 44px; }
+  .btn { padding: 8px 22px; }
+  .hero-img img { height: 300px; }
+}
+
+
+
+
+
+
+
+

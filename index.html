@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sandhu & Co. Skincare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+      <div class="logo">
+        <img src="images/logo.png" width="125" alt="Sandhu & Co. logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <i class='bx bx-search' id="search-icon" aria-label="Open search"></i>
+        <span class="cart-icon-wrap" id="cart-toggle" aria-label="Open cart">
+          <i class='bx bx-cart'></i>
+          <span class="cart-badge" id="cart-count">0</span>
+        </span>
+        <i class='bx bx-menu' id="menu-icon" aria-label="Open menu"></i>
+      </div>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search products..." aria-label="Search products" />
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h1>From the Earth,<br>For Your Skin!</h1>
+      <p>
+        Our products are handcrafted with plant-based, organic elements
+        to nourish your skin gently and naturally, no toxins, no compromises.
+      </p>
+      <a href="products.html" class="btn">Explore Now</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/products.jpg" alt="Skincare products">
+    </div>
+  </section>
+
+  <section class="products" id="featured">
+    <div class="heading">
+      <h2>Our Products</h2>
+      <p class="featured-subtext">A few favorites! See the full collection on our Products page.</p>
+    </div>
+    <div class="products-container">
+      <div class="box">
+        <img src="images/p1.jpg" alt="BotaniGlow Cream">
+        <h3>BotaniGlow Cream</h3>
+        <div class="content">
+          <span>$25</span>
+          <a href="products.html">View</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/p3.jpg" alt="BotaniGlow Serum">
+        <h3>BotaniGlow Serum</h3>
+        <div class="content">
+          <span>$30</span>
+          <a href="products.html">View</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/p5.jpg" alt="Clay Mask">
+        <h3>Clay Mask</h3>
+        <div class="content">
+          <span>$22</span>
+          <a href="products.html">View</a>
+        </div>
+      </div>
+    </div>
+    <div class="center-btn">
+      <a href="products.html" class="btn">View All Products</a>
+    </div>
+  </section>
+
+  <section class="footer" id="contact">
+    <div class="footer-box">
+      <h2>Sandhu & Co.</h2>
+      <p>Plant-based skincare crafted for everyday radiance.</p>
+      <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-tiktok'></i></a>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h3>Support</h3>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Return Policy</a></li>
+      <li><a href="#">Terms Of Use</a></li>
+    </div>
+    <div class="footer-box">
+      <h3>View Guides</h3>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog Posts</a></li>
+      <li><a href="#">Our Branches</a></li>
+    </div>
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:info@sandhuco.com">info@sandhuco.com</a></p>
+      <p>Phone: <a href="tel:+14035551234">(403) 555-1234</a></p>
+      <p>Address: 123 Natural Way, Calgary, AB T1X 1X1</p>
+      <p>Hours: Mon–Fri: 9am – 5pm</p>
+    </div>
+  </section>
+
+  <div class="copyright">
+    <p>&copy; 2025 Sandhu & Co. Organic Skincare. All rights reserved.</p>
+  </div>
+
+  <aside class="cart-panel" id="cart-panel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total:</span><strong id="cart-total">$0.00</strong></div>
+      <a class="btn" href="#" id="checkout-btn" aria-disabled="true">Checkout</a>
+    </div>
+  </aside>
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
